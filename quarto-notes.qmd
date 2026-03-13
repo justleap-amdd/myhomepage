@@ -1,0 +1,176 @@
+﻿---
+title: "Quarto 学习笔记"
+---
+
+> 📖 本页面记录我学习 Quarto 的过程与心得，从零开始，逐步深入。
+
+---
+
+## 🚀 什么是 Quarto？
+
+**Quarto** 是由 Posit（原 RStudio）开发的新一代开源科学出版系统，是 R Markdown 的继任者和升级版。
+
+::: {.callout-note}
+## Quarto 的核心特点
+- 🌐 **多语言支持**：支持 R、Python、Julia、Observable JS
+- 📄 **多格式输出**：HTML 网页、PDF、Word、演示文稿（Revealjs）、书籍等
+- 🔧 **统一语法**：使用 Markdown + YAML 配置，简单易学
+- 🤝 **开源免费**：完全开源，社区活跃
+:::
+
+---
+
+## 📁 网站项目结构
+
+本网站的文件结构如下：
+
+```
+myhomepage/
+├── _quarto.yml      # 网站配置文件（核心！）
+├── index.qmd        # 首页
+├── about.qmd        # 关于我
+├── education.qmd    # 教育背景
+├── skills.qmd       # 技能与经历
+├── quarto-notes.qmd # 本页：Quarto学习
+└── styles.css       # 自定义样式
+```
+
+---
+
+## 📝 Quarto 基础语法
+
+### 1. YAML 文件头
+
+每个 `.qmd` 文件开头都有一个 YAML 配置块：
+
+```yaml
+---
+title: "页面标题"
+author: "作者名"
+date: "2024-01-01"
+---
+```
+
+### 2. Markdown 基础
+
+| 语法 | 效果 |
+|------|------|
+| `**加粗**` | **加粗** |
+| `*斜体*` | *斜体* |
+| `# 标题1` | 一级标题 |
+| `## 标题2` | 二级标题 |
+| `- 列表项` | 无序列表 |
+| `1. 列表项` | 有序列表 |
+
+### 3. Callout 块
+
+Quarto 提供了美观的提示框：
+
+::: {.callout-note}
+这是一个 **note** 类型的提示框，用 `::: {.callout-note}` 创建。
+:::
+
+::: {.callout-tip}
+这是一个 **tip** 类型的提示框！
+:::
+
+::: {.callout-warning}
+这是一个 **warning** 类型的提示框。
+:::
+
+::: {.callout-important}
+这是一个 **important** 类型的提示框。
+:::
+
+### 4. 网格布局
+
+使用 Quarto 的网格系统可以创建多列布局：
+
+```markdown
+:::: {.grid}
+::: {.g-col-6}
+左列内容
+:::
+::: {.g-col-6}
+右列内容
+:::
+::::
+```
+
+---
+
+## ⚙️ _quarto.yml 配置详解
+
+`_quarto.yml` 是整个网站的核心配置文件：
+
+```yaml
+project:
+  type: website        # 项目类型为网站
+
+website:
+  title: "网站标题"
+  navbar:              # 导航栏配置
+    left:              # 左侧链接
+      - href: index.qmd
+        text: 首页
+
+format:
+  html:
+    theme: cosmo       # 使用 cosmo 主题
+    css: styles.css    # 自定义 CSS
+    toc: true          # 显示目录
+```
+
+---
+
+## 🎨 主题与样式
+
+Quarto 内置了多种 Bootstrap 主题：
+
+| 主题名称 | 风格特点 |
+|---------|---------|
+| `cosmo` | 现代简洁（本站使用） |
+| `flatly` | 扁平化设计 |
+| `darkly` | 深色主题 |
+| `minty` | 清新绿色 |
+| `journal` | 杂志风格 |
+| `lumen` | 明亮简约 |
+
+还可以通过 `styles.css` 自定义样式，完全掌控网站外观！
+
+---
+
+## 🔨 常用命令
+
+在终端中使用以下命令操作 Quarto 项目：
+
+```bash
+# 预览网站（实时刷新）
+quarto preview
+
+# 渲染整个网站
+quarto render
+
+# 渲染单个文件
+quarto render index.qmd
+
+# 发布到 GitHub Pages
+quarto publish gh-pages
+```
+
+---
+
+## 📚 学习资源
+
+- 🌐 **官方文档**：[quarto.org](https://quarto.org)
+- 📖 **中文教程**：搜索"Quarto 中文教程"
+- 💬 **社区论坛**：[GitHub Discussions](https://github.com/quarto-dev/quarto-cli/discussions)
+- 🎥 **视频教程**：YouTube 搜索 "Quarto tutorial"
+
+::: {.callout-tip}
+## 💡 学习建议
+1. 先动手修改本网站的内容，熟悉 `.qmd` 文件格式
+2. 尝试修改 `_quarto.yml` 中的主题，看看效果变化
+3. 查看官方文档中的示例，逐步学习更多功能
+4. 可以尝试在页面中嵌入 R 或 Python 代码，体验数据科学功能！
+:::

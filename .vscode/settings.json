@@ -1,0 +1,5 @@
+{
+    "quarto.render.previewType": "external",
+    "workbench.editor.closeOnFileDelete": true,
+    "workbench.editor.customLabels.enabled": false
+}

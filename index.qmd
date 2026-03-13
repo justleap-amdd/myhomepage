@@ -1,0 +1,81 @@
+﻿---
+title: ""
+page-layout: full
+toc: false
+---
+
+```{=html}
+<div class="hero-section">
+  <div class="hero-content">
+    <div class="hero-avatar">
+      <div class="avatar-placeholder">杨</div>
+    </div>
+    <div class="hero-text">
+      <h1 class="hero-name">杨丽萍</h1>
+      <h2 class="hero-subtitle">城乡规划 · 硕士研究生在读</h2>
+      <p class="hero-desc">
+        全日制硕士研究生在读，本科毕业于河南农业大学城乡规划专业。<br>
+        热爱城乡规划设计，专注于资源型城市转型与绿色发展研究。<br>
+        现居 📍 湖北省·武汉市
+      </p>
+      <div class="hero-links">
+        <a href="about.html" class="btn-primary">了解我 →</a>
+        <a href="mailto:1345400113@qq.com" class="btn-secondary">📧 联系我</a>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+---
+
+## 🌟 快速导航
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-3}
+::: {.card-nav}
+### 👤 [关于我](about.qmd)
+了解我的个人背景、研究兴趣和联系方式。
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-3}
+::: {.card-nav}
+### 🎓 [教育背景](education.qmd)
+本科阶段课程、资格证书与竞赛经历。
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-3}
+::: {.card-nav}
+### 🛠️ [技能与经历](skills.qmd)
+软件技能、项目经历与毕业论文研究。
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-3}
+::: {.card-nav}
+### 📝 [Quarto学习](quarto-notes.qmd)
+记录学习 Quarto 的笔记与心得体会。
+:::
+:::
+
+::::
+
+---
+
+## 📌 关于本网站
+
+> 这是我的个人主页，使用 **[Quarto](https://quarto.org)** 构建。Quarto 是一个强大的开源科学与技术出版系统，支持 R、Python、Julia 等多种语言，可以生成精美的网页、PDF、演示文稿等。
+
+本网站主要用于：
+
+- 🪪 展示我的个人简历与学术背景
+- 📖 记录学习 Quarto 的过程与心得
+- 💡 分享城乡规划领域的思考与见解
+
+::: {.callout-tip}
+## 💡 Quarto 小知识
+这个网站使用了 Quarto 的 **Website 项目类型**，通过简单的 `.qmd` 文件即可生成完整的多页面网站！
+:::
